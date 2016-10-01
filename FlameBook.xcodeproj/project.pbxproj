@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		3BB888811D950548002797EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB888801D950548002797EB /* AppDelegate.swift */; };
-		3BB888831D950548002797EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB888821D950548002797EB /* ViewController.swift */; };
 		3BB888861D950548002797EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB888841D950548002797EB /* Main.storyboard */; };
 		3BB888881D950548002797EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BB888871D950548002797EB /* Assets.xcassets */; };
 		3BB8888B1D950548002797EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB888891D950548002797EB /* LaunchScreen.storyboard */; };
+		3BB888931D95056B002797EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BB888921D95056B002797EB /* GoogleService-Info.plist */; };
+		3BB888951D9519B6002797EB /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB888941D9519B6002797EB /* StatusTableViewController.swift */; };
+		3BB888971D951C42002797EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB888961D951C42002797EB /* User.swift */; };
+		3BB888991D951D48002797EB /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB888981D951D48002797EB /* Status.swift */; };
+		F2670E989BD38A1F123C6AA4 /* Pods_FlameBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D10603729EE7EEB04799059 /* Pods_FlameBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3BB8887D1D950548002797EB /* FlameBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlameBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB888801D950548002797EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BB888821D950548002797EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BB888851D950548002797EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BB888871D950548002797EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BB8888A1D950548002797EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BB8888C1D950548002797EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BB888921D95056B002797EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3BB888941D9519B6002797EB /* StatusTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
+		3BB888961D951C42002797EB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3BB888981D951D48002797EB /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		7743E6A258435665B1E7FC5A /* Pods-FlameBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlameBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlameBook/Pods-FlameBook.release.xcconfig"; sourceTree = "<group>"; };
+		7B43E1F1EAA96F3E8D4D14D9 /* Pods-FlameBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlameBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlameBook/Pods-FlameBook.debug.xcconfig"; sourceTree = "<group>"; };
+		9D10603729EE7EEB04799059 /* Pods_FlameBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlameBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2670E989BD38A1F123C6AA4 /* Pods_FlameBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				3BB8887F1D950548002797EB /* FlameBook */,
 				3BB8887E1D950548002797EB /* Products */,
+				E517B6563E3CFB4C61B4D947 /* Pods */,
+				AC41E05175FE71A185E0879D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +68,49 @@
 			isa = PBXGroup;
 			children = (
 				3BB888801D950548002797EB /* AppDelegate.swift */,
-				3BB888821D950548002797EB /* ViewController.swift */,
+				3BB8889A1D95230F002797EB /* Model */,
+				3BB888941D9519B6002797EB /* StatusTableViewController.swift */,
 				3BB888841D950548002797EB /* Main.storyboard */,
 				3BB888871D950548002797EB /* Assets.xcassets */,
 				3BB888891D950548002797EB /* LaunchScreen.storyboard */,
 				3BB8888C1D950548002797EB /* Info.plist */,
+				3BB888921D95056B002797EB /* GoogleService-Info.plist */,
+				3BB8889F1D9857DC002797EB /* Assets */,
 			);
 			path = FlameBook;
+			sourceTree = "<group>";
+		};
+		3BB8889A1D95230F002797EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BB888961D951C42002797EB /* User.swift */,
+				3BB888981D951D48002797EB /* Status.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3BB8889F1D9857DC002797EB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		AC41E05175FE71A185E0879D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D10603729EE7EEB04799059 /* Pods_FlameBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E517B6563E3CFB4C61B4D947 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B43E1F1EAA96F3E8D4D14D9 /* Pods-FlameBook.debug.xcconfig */,
+				7743E6A258435665B1E7FC5A /* Pods-FlameBook.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BB8888F1D950548002797EB /* Build configuration list for PBXNativeTarget "FlameBook" */;
 			buildPhases = (
+				9EB709BD27D058C40D3BA107 /* [CP] Check Pods Manifest.lock */,
 				3BB888791D950548002797EB /* Sources */,
 				3BB8887A1D950548002797EB /* Frameworks */,
 				3BB8887B1D950548002797EB /* Resources */,
+				1DD2F44F0CBBFAAD3A4C8EE9 /* [CP] Embed Pods Frameworks */,
+				955A41F2A0FDF7053136C668 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BB8888B1D950548002797EB /* LaunchScreen.storyboard in Resources */,
+				3BB888931D95056B002797EB /* GoogleService-Info.plist in Resources */,
 				3BB888881D950548002797EB /* Assets.xcassets in Resources */,
 				3BB888861D950548002797EB /* Main.storyboard in Resources */,
 			);
@@ -131,13 +184,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DD2F44F0CBBFAAD3A4C8EE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlameBook/Pods-FlameBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		955A41F2A0FDF7053136C668 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlameBook/Pods-FlameBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EB709BD27D058C40D3BA107 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3BB888791D950548002797EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BB888831D950548002797EB /* ViewController.swift in Sources */,
 				3BB888811D950548002797EB /* AppDelegate.swift in Sources */,
+				3BB888951D9519B6002797EB /* StatusTableViewController.swift in Sources */,
+				3BB888971D951C42002797EB /* User.swift in Sources */,
+				3BB888991D951D48002797EB /* Status.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +359,7 @@
 		};
 		3BB888901D950548002797EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B43E1F1EAA96F3E8D4D14D9 /* Pods-FlameBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FlameBook/Info.plist;
@@ -268,6 +372,7 @@
 		};
 		3BB888911D950548002797EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7743E6A258435665B1E7FC5A /* Pods-FlameBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FlameBook/Info.plist;
@@ -297,6 +402,7 @@
 				3BB888911D950548002797EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

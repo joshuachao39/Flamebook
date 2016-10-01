@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Connects our app to Firebase!
+        FIRApp.configure()
+        
+        
+        /* FIRAuth.auth()?.signIn(withEmail: "joshua.chao39@gmail.com", password: "password", completion: { (user, error) in
+            if let error = error {
+                print (error.localizedDescription)
+                print ("lol something went wrong")
+            } else {
+                print (user?.email)
+            }
+        }) */
+        
+        
+        // This allows us to make the title bar in the Navigation Bar white!
+        let navigationBarAppearance = UINavigationBar.appearance()
+        navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+        
+        
         return true
     }
 
